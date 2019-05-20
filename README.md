@@ -7,7 +7,9 @@
 
 Group members:
 
-ZHAOKAI XU I implemented the file system calls in part1 except for read() and write(); readVirtualMemory() and writeVirtualMemory() to support multiprogramming by allowing multiple user processes sharing memory; handleExec(), handleJoin(), handleExit() and even handleHalt in part3 to support multiprogramming by allowing multi-process interacting with each others(ex, child and parent relationship in handleJoin() )
+ZHAOKAI XU:
+
+I implemented the file system calls in part1 except for read() and write(); readVirtualMemory() and writeVirtualMemory() to support multiprogramming by allowing multiple user processes sharing memory; handleExec(), handleJoin(), handleExit() and even handleHalt in part3 to support multiprogramming by allowing multi-process interacting with each others(ex, child and parent relationship in handleJoin() )
 
 UserProcess() allocate a fileTable of OpenFile obj, assign PID for each process (where the PID generator is in kernel); allocate a childProcessMap to map each childPID to child Process, a reference to its parent process; childStatusMap to keep track of the childStatus when child exit; a cvLock and a cv to coordinate the child and parent process in handleJoin(); a isNormal boolean var to indicate if child process exit abnormally and an abnormalChildSet to store the child PID.
 
