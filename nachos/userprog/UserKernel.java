@@ -1,8 +1,8 @@
 package nachos.userprog;
-
 import nachos.machine.*;
 import nachos.threads.*;
 import nachos.userprog.*;
+import java.util.*;
 
 /**
  * A kernel that can support multiple user processes.
@@ -23,6 +23,27 @@ public class UserKernel extends ThreadedKernel {
 		super.initialize(args);
 
 		console = new SynchConsole(Machine.console());
+
+		//#############################################################
+		// PA2  part2	section 1
+		// manage the allocation of pages of physical memory so that diff processes do not
+		// overlap in their memory usage, maintaining a static linked list of free physical pages
+		//#############################################################
+		freePhyPages = new LinkedList<Integer>();
+
+		//getNumPhysPages() return the number of pages of physical memory.
+		for(int i = 0; i < Machine.processor().getNumPhysPages(); i++){
+			freePhyPages.add(i);
+		}
+
+		lock = new Lock();
+
+		//#############################################################
+		// PA3
+		numOfProcesses = 0;
+		nextProcessID = 0;
+
+		//#############################################################
 
 		Machine.processor().setExceptionHandler(new Runnable() {
 			public void run() {
@@ -124,4 +145,22 @@ public class UserKernel extends ThreadedKernel {
 
 	// dummy variables to make javac smarter
 	private static Coff dummy1 = null;
+
+	//#############################################################
+	// PA2  part2
+	public static LinkedList<Integer> freePhyPages;	//manage the allocation of pages of physical memory
+
+	public static Lock lock;	//sync the free_phy_pages
+
+	//#############################################################
+	// PA2  part3
+	public static int numOfProcesses;	// keep track of the number of active user process, can increase and decrease
+
+	public static int nextProcessID;	// assign processID to  a new process, increase only
+
+
+	public static Lock lockforCV;
+
+	//#############################################################
+
 }
