@@ -1,0 +1,93 @@
+------[ Mon May 27 12:42:59 2019 ]------
+--[ pipe1: Creates a pipe, child and writes a message in chunks ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+writing 2778 bytes into pipe...
+creating /pipe/one...
+...failed (-1)
+Proccess[0]Exit status(handleExit) -1001
+
+nachos.machine.AssertionFailureError: ParentChildGrader: expected child status of 2778, but child actually exited with -1001
+	at nachos.machine.Lib.assertTrue(Lib.java:89)
+	at nachos.ag.UCSDParentChildGrader.exitCalled(UCSDParentChildGrader.java:65)
+	at nachos.ag.UCSDParentChildGrader.finishingCurrentProcess(UCSDParentChildGrader.java:49)
+	at nachos.userprog.UserProcess.handleExit(UserProcess.java:1281)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:1471)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:1493)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:104)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:50)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:227)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:216)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ pipe3: Writes to multiple pipes ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+creating /pipe/testwrite1...
+...failed (-1)
+Proccess[0]Exit status(handleExit) -1001
+
+nachos.machine.AssertionFailureError: ExitGrader: expected exit status of 111, but program actually exited with -1001
+	at nachos.machine.Lib.assertTrue(Lib.java:89)
+	at nachos.ag.UCSDExitGrader.finishingCurrentProcess(UCSDExitGrader.java:26)
+	at nachos.userprog.UserProcess.handleExit(UserProcess.java:1281)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:1471)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:1493)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:104)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:50)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:227)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:216)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ pipe_creat1: Create two pipes with same name in parent ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 123
+Machine halting!
+
+Ticks: total 13726, kernel 13680, user 46
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: page faults 0, TLB misses 0
+Swap: COFF reads 0, swap reads 0, swap writes 0
+Network I/O: received 0, sent 0
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ pipe_creat2: Stress Test ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 123
+Machine halting!
+
+Ticks: total 14800, kernel 14710, user 90
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: page faults 0, TLB misses 0
+Swap: COFF reads 0, swap reads 0, swap writes 0
+Network I/O: received 0, sent 0
+stty: 'standard input': Inappropriate ioctl for device
+

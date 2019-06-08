@@ -1,0 +1,42 @@
+------[ Sun May  5 16:05:02 2019 ]------
+PASS : +0.83 : 0.83 : CV2 - Test if sleep has acquired the lock
+PASS : +0.83 : 1.67 : CV2 - Test if wake has acquired the lock
+PASS : +0.83 : 2.50 : CV2 - Test if wakeAll has acquired the lock
+PASS : +5.83 : 8.33 : CV2 - Test if sleep() sleeps until someone wakes it up
+PASS : +5.83 : 14.17 : CV2 - Test if wake() wakes exactly one sleeping thread
+PASS : +5.83 : 20.00 : CV2 - Test if wakeAll() wakes all the sleeping threads
+PASS : +2.50 : 22.50 : CV2 - Test if wake has no effect when there is no thread sleeping
+PASS : +2.50 : 25.00 : CV2 - Test if wakeAll has no effect when there is no thread sleeping
+PASS : +3.70 : 28.70 : SLEEP FOR - Thread resumes because the timeout expires (wake never called)
+FAIL : +0.74 : 28.70 : SLEEP FOR - Thread resumes due to wake, timeout cancelled
+FAIL : +0.74 : 28.70 : SLEEP FOR - One thread resumes due to wake, another due to timeout
+PASS : +0.74 : 29.44 : SLEEP FOR - One thread calls sleep, another calls sleepFor, wake is never called...
+PASS : +0.74 : 30.19 : SLEEP FOR - Many threads call sleepFor, all should timeout.
+PASS : +0.74 : 30.93 : SLEEP FOR - With many threads, half call sleepFor and should timeout, the...
+PASS : +0.37 : 31.30 : SLEEP FOR - Thread resumes because the timeout expires, wake called after the timeout
+FAIL : +1.11 : 31.30 : SLEEP FOR - With many threads, half call sleepFor and the other half call sleep. wakeAll...
+PASS : +0.74 : 32.04 : SLEEP FOR - If a waitUntil expires, and some other thread calls wake before it continues
+PASS : +8.62 : 40.66 : SQUAD - Simple test matching one of each kind of player thread.
+PASS : +1.72 : 42.38 : SQUAD - Test that simply three threads do not generate a match
+PASS : +1.72 : 44.11 : SQUAD - Test that simply three threads do not generate a match
+PASS : +1.72 : 45.83 : SQUAD - Test that simply three threads do not generate a match
+PASS : +4.31 : 50.14 : SQUAD - Three player threads repeatedly matching on the same SquadMatch
+PASS : +4.31 : 54.45 : SQUAD - Repeatedly create random player threads
+PASS : +0.86 : 55.31 : SQUAD - Two players on one SquadMatch, the third on another. No match
+PASS : +0.86 : 56.17 : SQUAD - Successful matches on two different SquadMatches
+PASS : +0.86 : 57.04 : SQUAD - Repeatedly create random player threads using distinct SquadMatch instances
+PASS : +6.00 : 63.04 : JOIN - Test join() after child had finished.
+PASS : +6.00 : 69.04 : JOIN - Test join() before child finishes
+PASS : +2.00 : 71.04 : JOIN - Test join() on different childs right after spawn, one by one
+PASS : +2.00 : 73.04 : JOIN - Test join() on different childs; all children are spawned first, then joined one by one.
+PASS : +2.00 : 75.04 : JOIN - Test differnt threads join different other threads.
+PASS : +1.00 : 76.04 : JOIN - Test joining same thread multiple times should be an error.
+PASS : +1.00 : 77.04 : JOIN - Test joining oneself should be an error.
+PASS : +2.00 : 79.04 : ALARM - Tests waitUntil to ensure it waits at least minimum amount of time
+PASS : +2.00 : 81.04 : ALARM - Tests whether waitUntil actually wakes up at correct time
+PASS : +2.00 : 83.04 : ALARM - Test if waking up threads in proper order - not necessarily sleep order
+PASS : +10.00 : 93.04 : ALARM - Test if thds are waken up at proper time
+PASS : +2.00 : 95.04 : ALARM - Tests proper handling of negative wait times.
+PASS : +2.00 : 97.04 : ALARM - Tests if mistakenly waking all the threads
+FAIL : +0.37 : 97.04 : ALARM CANCEL - Test if cancel works
+Autograde Score: 97.04 / 100

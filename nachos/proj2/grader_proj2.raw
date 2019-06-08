@@ -1,0 +1,921 @@
+------[ Sat Jun  1 00:50:15 2019 ]------
+--[ read-abc-1: Test reading short file w/ length less than file size ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 10
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ read-abc-2: Test reading short file w/ length equal to file size ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 26
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ read-abc-3: Test reading short file w/ length greater than file size ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 26
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ read-abc-4: Read in 10 characters, "abcdefghij", from stdin ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader console
+Attempting to read "abcdefghij" from stdin
+Read 1 bytes from stdin
+buf now contains "a"
+Read 1 bytes from stdin
+buf now contains "ab"
+Read 1 bytes from stdin
+buf now contains "abc"
+Read 1 bytes from stdin
+buf now contains "abcd"
+Read 1 bytes from stdin
+buf now contains "abcde"
+Read 1 bytes from stdin
+buf now contains "abcdef"
+Read 1 bytes from stdin
+buf now contains "abcdefg"
+Read 1 bytes from stdin
+buf now contains "abcdefgh"
+Read 1 bytes from stdin
+buf now contains "abcdefghi"
+Read 1 bytes from stdin
+buf now contains "abcdefghij"
+Read 0 bytes from stdin
+buf now contains "abcdefghij"
+Cmp_val: 0, buf: abcdefghij
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ read-abc-5: Test reading small amount repeatedly from a file ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 10
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ read-err-badbuf-1: Test handling invalid buf. Read shall return -1 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ read-err-badlen: Test handling invalid length. Read shall return -1 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ read-err-fd-1: Test handling invalid file descriptor. Read shall return -1 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ read-err-fd-2: Test handling out of range file descriptor. Read shall return -1 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ read-err-fd-3: Test handling invalid buf, writing to readonly page. Read shall return -1 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ read-long: Test reading large amount from file ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 2048
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write-abc-1: Test writing small amount w/ length less than buf size ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 10
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write-abc-2: Test writing small amount w/ length equal to buf size ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 26
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write-abc-3: Test writing small amount to stdout ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+abcdefghijklmnopqrstuvwxyzProccess[0]Exit status(handleExit) 26
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write-abc-4: Test writing small amount repeatedly to a file ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 26
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write-err-badbuf-1: Test handling invalid buf. Read shall return -1 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write-err-badlen: Test handling invalid length. Read shall return -1 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write-err-fd-1: Test handling invalid file descriptor when calling write. Read shall return -1 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write-err-fd-2: Test handling out of range file descriptor when calling write. Read shall return -1 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write-err-fd-3: Test handling out of range file descriptor when calling write. Read shall return -1 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write-long: Test writing large amount to file ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 2048
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write1: Write a string to stdout, one byte at a time ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+roses are red
+violets are blue
+I love Nachos
+and so do you
+
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ write10: Test the write system call under a variety of good and bad conditions ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+creating write.out...
+...passed (fd = 2)
+writing 59 bytes to file, 59 bytes at a time...
+...passed (wrote 59 bytes)
+closing 2...
+opening write.out...
+...passed (fd = 2)
+reading write.out into buffer...
+...success
+validating write.out...
+...passed
+closing 2...
+creating write.out...
+...passed (fd = 2)
+writing 59 bytes to file, 8 bytes at a time...
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 3 bytes)
+closing 2...
+opening write.out...
+...passed (fd = 2)
+reading write.out into buffer...
+...success
+validating write.out...
+...passed
+closing 2...
+creating write.out...
+...passed (fd = 2)
+writing 59 bytes to file, 1 bytes at a time...
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+closing 2...
+opening write.out...
+...passed (fd = 2)
+reading write.out into buffer...
+...success
+validating write.out...
+...passed
+closing 2...
+creating binary.out...
+...passed (fd = 2)
+writing 4096 bytes to file, 4096 bytes at a time...
+...passed (wrote 4096 bytes)
+closing 2...
+opening binary.out...
+...passed (fd = 2)
+reading binary.out into buffer...
+...success
+validating binary.out...
+...passed
+closing 2...
+creating binary.out...
+...passed (fd = 2)
+writing 4096 bytes to file, 128 bytes at a time...
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+closing 2...
+opening binary.out...
+...passed (fd = 2)
+reading binary.out into buffer...
+...success
+validating binary.out...
+...passed
+closing 2...
+writing to an invalid fd (-10)...
+...passed (r = -1)
+writing to an invalid fd (256)...
+...passed (r = -1)
+writing to an unopened fd (8)...
+...passed (r = -1)
+creating bad.out...
+...passed (fd = 2)
+writing count = 0 bytes...
+...passed
+writing with an invalid buffer (should not crash, only return an error)...
+...passed (r = -1)
+writing with an invalid count (should not crash, only return an error)...
+...passed (r = -1)
+writing with a buffer that extends beyond the end of the
+address space.  write should return an error.
+...passed (r = -1)
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ open1: Test open single file and get valid fd ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ open2: Test open a file that does not exist ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ open3: Check graceful failure of open when OpenFileLimit exceeded ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ open4: Check that duplicate fd is not given for two different files ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ open5: Check that duplicate fd is not given for same file ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ open6: Check stdin and stdout not messed with i.e. fd is not assigned to new file ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ open7: Check duplicate fd not given for many files ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ creat1: Test creat single file and get valid fd ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ creat2: Test creat a file that does not exist ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ creat3: Check graceful failure of open when OpenFileLimit exceeded ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ creat4: Check that duplicate fd is not given for two different files ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ creat5: Check that duplicate fd is not given for same file ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ creat6: Check stdin and stdout not messed with i.e. fd is not assigned to new file ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ creat7: Check duplicate fd not given for many files ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ unlink1: Test unlink single file and get status ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ unlink2: Test unlink on invalid file ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ unlink3: Test unlink single file and then try to open it, should fail ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ unlink4: open file, then unlink, read to make sure we can still read ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ close1: Test close bogus file descriptor returns ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ close2: Test close on valid fd assuming open works ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ close3: Test to close stdin ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ close4: Test to close stdout ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ close5: Test to close stdin/stdout and open 15 files ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ exec1: Execute a simple program (one child) ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[1]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ exec2: Execute multiple programs (three children) ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[3]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ exec3: Execute an invalid program ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[1]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ exec4: Execute a bad program (out of memory) ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[1]Exit status(handleExit) -1
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ exec6: Execute with arguments ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+put exec6.coff to sleep
+Proccess[1]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ exit1: Basic single process exit testcase ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[0]Exit status(handleExit) 123
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ exit2: Test if process is freeing pages correctly on exit ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[1]Exit status(handleExit) 555
+Child number 0 created with pid 1
+Proccess[2]Exit status(handleExit) 555
+Child number 1 created with pid 2
+Proccess[3]Exit status(handleExit) 555
+Child number 2 created with pid 3
+Proccess[4]Exit status(handleExit) 555
+Child number 3 created with pid 4
+Proccess[5]Exit status(handleExit) 555
+Child number 4 created with pid 5
+Proccess[6]Exit status(handleExit) 555
+Child number 5 created with pid 6
+Proccess[7]Exit status(handleExit) -1
+
+nachos.machine.AssertionFailureError: ParentChildExitGrader: expected parent status of 0, but parent actually exited with -1
+-1 indicates process 1 creation failed
+-2 indicates the return value of join() is incorrect
+-4 indicates the status value of join() is incorrect
+
+	at nachos.machine.Lib.assertTrue(Lib.java:89)
+	at nachos.ag.UCSDParentChildExitGrader.exitCalled(UCSDParentChildExitGrader.java:77)
+	at nachos.ag.UCSDParentChildExitGrader.finishingCurrentProcess(UCSDParentChildExitGrader.java:49)
+	at nachos.userprog.UserProcess.handleExit(UserProcess.java:1281)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:1471)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:1493)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:104)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:50)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:227)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:216)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ exit3: Test if process is closing the open files on exit ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+The file descriptors of the opened files are 2 and 3
+Proccess[1]Exit status(handleExit) 666
+Child number 0 created with pid 1
+Proccess[1]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ exit4: Test if exit status of child is returned to parent via join - single child ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+put exit4_test_join_status_simple.coff to sleep
+Proccess[1]Exit status(handleExit) 555
+Expected status is 555 and returned status is 555
+Proccess[1]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ exit5: Test if exit status of child is returned to parent via join - multiple children ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Proccess[2]Exit status(handleExit) 555
+Proccess[3]Exit status(handleExit) 777
+Proccess[3]Exit status(handleExit) -2
+
+nachos.machine.AssertionFailureError: ParentChildExitGrader: expected parent status of 0, but parent actually exited with -2
+-1 indicates process 1 creation failed
+-2 indicates the return value of join() is incorrect
+-4 indicates the status value of join() is incorrect
+
+	at nachos.machine.Lib.assertTrue(Lib.java:89)
+	at nachos.ag.UCSDParentChildExitGrader.exitCalled(UCSDParentChildExitGrader.java:77)
+	at nachos.ag.UCSDParentChildExitGrader.finishingCurrentProcess(UCSDParentChildExitGrader.java:49)
+	at nachos.userprog.UserProcess.handleExit(UserProcess.java:1281)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:1471)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:1493)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:104)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:50)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:227)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:216)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ join1: After exec-ing the child; it waits for the child to exit. ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing exit1.coff...
+Proccess[1]Exit status(handleExit) 123
+...passed
+joining 1...
+...return val passed
+...status passed
+Proccess[1]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ join2: Join to child that has not exited yet ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing join2-child.coff and calling join before child finishes...
+put join2.coff to sleep
+child causing delay before exiting, 1 of 5
+child causing delay before exiting, 2 of 5
+child causing delay before exiting, 3 of 5
+child causing delay before exiting, 4 of 5
+child causing delay before exiting, 5 of 5
+Proccess[1]Exit status(handleExit) 123
+...return val passed
+...status passed
+Proccess[1]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ join3: Call join on child's child which counts as joining on a process that is not a child of the current process ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing join3-child.coff ...
+join3 joining an existing process that isn't the curreProccess[2]Exit status(handleExit) 123
+Proccess[2]Exit status(handleExit) 123
+nt process' direct child
+put join3.coff to sleep
+Killed
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ join4: Joins on a child that exits due to an unhandled exception ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing except1.coff ...
+Proccess[1]Exit status(handleExit) -1
+join4 joining a process that dies due to an unhadled exception
+...passed
+Proccess[1]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ join5: Exec 3 children and then join all 3 ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing 3 exit1.coff processes...
+Proccess[1]Exit status(handleExit) 123
+...successfully created child (pid = 1)
+Proccess[2]Exit status(handleExit) 123
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ multiprog1: Read 1024 bytes of data from a random page ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+readVMTest() is executing
+createProcess is executing
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ multiprog3: Check process creation and execute ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ multiprog5: Pocess creation with argv > 1 page should fail ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ multiprog6: check if process creation fails when memory is out of pages ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+createProcess is executing
+Proccess[1]Exit status(handleExit) 10
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ multiprog7: Read at Invalid virtual address should fail ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ multiprog8: Write at Invalid virtual address should fail ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+Proccess[0]Exit status(handleExit) 0
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+
+--[ multiprog9: Free list correctness is not affected ]--
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+createProcess is executing
+Proccess[1]Exit status(handleExit) 10
+
+success
+stty: 'standard input': Inappropriate ioctl for device
+

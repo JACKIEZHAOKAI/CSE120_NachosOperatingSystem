@@ -204,8 +204,6 @@ public class UserProcess {
  	 * ###########################################################################
 	 */
 	public int readVirtualMemory(int vaddr, byte[] data, int offset, int length) {
-		Lib.debug(dbgProcess, "readVirtualMemory()");
-
 		Lib.assertTrue(offset >= 0 && length >= 0
 				&& offset + length <= data.length);
 
@@ -568,6 +566,7 @@ public class UserProcess {
 					+ " section (" + section.getLength() + " pages)");
 
 			//iterate all pages(paging) in each section, section.getLength() returns the number of pages in each section
+
 			for (int spn = 0; spn < section.getLength(); spn++) {	// spn: page number of each section
 
 				int vpn = section.getFirstVPN() + spn;	//	int ppn = UserKernel.freePhyPages.removeLast();
@@ -602,11 +601,9 @@ public class UserProcess {
 		for(int i=0; i< pageTable.length; i++){
 			if(pageTable[i].used){
 				UserKernel.freePhyPages.add(pageTable[i].ppn);
-				pageTable[i].used = false;
 			}
 		}
 		UserKernel.lock.release();
-
 	}
 
 	//#######################################################################
@@ -1225,7 +1222,7 @@ public class UserProcess {
 			return 0;
 		}
 
-		//1.1 exit normally
+		//1.2 exit normally
 		if(childStatusMap.containsKey(childPID)){
 			//Get and set child status
 			int childStatus = childStatusMap.get(processID);	//get child status
@@ -1275,10 +1272,17 @@ public class UserProcess {
 	 *
 	 * exit() never returns.
 	 */
+
+	// FAIL : +1.67 : 56.67 : exit2: Test if process is freeing pages correctly on exit
+
+	//FAIL : +1.67 : 60.83 : exit5: Test if exit status of child is returned to parent via join - multiple children
+
+	//FAIL : +1.67 : 63.33 : join3: Call join on child's child which counts as joining on a process that is not a child of the current process
+
 	private int handleExit(int status) {
 
 		Lib.debug(dbgProcess, "UserProcess.handleExit (" + status + ")");
-
+		System.out.println("Proccess["+ processID +"]Exit status(handleExit) " + status);
 		// Do not remove this call to the autoGrader...
 		Machine.autoGrader().finishingCurrentProcess(status);
 		// ...and leave it as the top of handleExit so that we
@@ -1298,7 +1302,6 @@ public class UserProcess {
 
 		//3. Close the coff by calling coff.close()
 		coff.close();
-
 
 		//4. If it has a parent process, save the status for parent
 		if(parentProcess!=null){

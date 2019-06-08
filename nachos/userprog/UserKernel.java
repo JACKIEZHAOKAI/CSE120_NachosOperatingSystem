@@ -159,8 +159,6 @@ public class UserKernel extends ThreadedKernel {
 	public static int nextProcessID;	// assign processID to  a new process, increase only
 
 
-	public static Lock lockforCV;
-
 	//#############################################################
 
 }

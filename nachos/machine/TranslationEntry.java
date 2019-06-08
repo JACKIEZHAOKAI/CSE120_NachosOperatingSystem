@@ -32,7 +32,7 @@ public final class TranslationEntry {
 		this.valid = valid;
 		this.readOnly = readOnly;
 		this.used = used;
-		this.dirty = dirty;
+		this.dirty = dirty;		//write through
 	}
 
 	/**
